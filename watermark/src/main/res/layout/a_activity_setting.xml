@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_gravity="center"
+        android:text="分辨率:"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="#005"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <RadioGroup
+        android:id="@+id/rg_fen"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_640480"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="640*480"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_800480"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="800*480"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_1280720"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1280*720"/>
+    </RadioGroup>
+
+    <View
+        android:background="#005"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:text="码率:"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView" />
+
+    <View
+        android:background="#005"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_ma"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_400"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="400kbps"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_600"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="600kbps"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_1M"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="1Mbps"/>
+    </RadioGroup>
+
+    <View
+        android:background="#005"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="16sp"
+            android:text="文件名:"
+           />
+        <EditText
+            android:id="@+id/et_name"
+            android:hint="请输入文件名(未设置则采取默认形式)"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLength="10"/>
+    </LinearLayout>
+    <View
+        android:background="#005"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:id="@+id/btn_ok"
+        android:text="确定"
+        android:layout_width="80dp"
+        android:layout_height="40dp" />
+</LinearLayout>

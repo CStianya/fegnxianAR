@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_start"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginTop="16dp"
+    tools:context="com.example.zhaoshuang.weixinrecordeddemo.StartActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:text="版本号："/>
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"/>
+
+</LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="机构号"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edt_institution"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入机构号"
+        android:textSize="16sp"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:layout_marginBottom="8dp"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="保单号"
+        android:textSize="16sp"
+        />
+
+    <EditText
+        android:id="@+id/edt_warranty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入保单号"
+        android:textSize="16sp"
+        android:textCursorDrawable="@drawable/black_cursor"
+        android:layout_marginBottom="8dp"
+        android:editable="false"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户姓名"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入姓名"
+        android:textSize="16sp"
+        android:textCursorDrawable="@drawable/black_cursor"/>
+
+    <Button
+        android:id="@+id/btn_commit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开始录制"
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+</LinearLayout>

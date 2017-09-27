@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/activity_base"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_white"
+        android:orientation="horizontal">
+
+        <LinearLayout style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:text="类型"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size" />
+
+            <RadioGroup
+                android:id="@+id/rg_modify_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="56dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_modify_man"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:layout_weight="1"
+                    android:button="@drawable/i_radio_button"
+                    android:paddingLeft="10dp"
+                    android:text="男"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size" />
+
+                <RadioButton
+                    android:id="@+id/rb_modify_woman"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:button="@drawable/i_radio_button"
+                    android:paddingLeft="10dp"
+                    android:text="女"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size" />
+            </RadioGroup>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_modify_sex"
+        style="@style/normalSubmitButtonStyle"
+        android:text="修改" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/icon_build" />
+    </RelativeLayout>
+</LinearLayout>

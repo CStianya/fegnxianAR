@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/activity_base"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_personalData_headImage"
+            style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="我的头像"
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/iv_personalData_headImage"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/icon_user_defalut_avatar" />
+
+            <ImageView
+                android:id="@+id/iv_personalData_head"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_arrow_right" />
+        </LinearLayout>
+
+        <include layout="@layout/line_hor_gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_personalData_nickname"
+            style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="昵称"
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_personalData_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/iv_personalData_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_arrow_right" />
+        </LinearLayout>
+
+        <include layout="@layout/line_hor_gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_personalData_sex"
+            style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="性别"
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_personalData_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text=""
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/iv_personalData_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_arrow_right" />
+        </LinearLayout>
+
+        <include layout="@layout/line_hor_gray"/>
+
+
+        <LinearLayout
+            style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="账号"
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:id="@+id/tv_personalData_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18650349429"
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <include layout="@layout/line_hor_gray"/>
+
+
+        <LinearLayout
+            android:id="@+id/ll_personalData_modify"
+            style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="修改密码"
+                android:textColor="@color/ilou_text_color"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/iv_personalData_modify"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/icon_arrow_right" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

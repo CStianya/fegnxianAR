@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/resigister_linear"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/activity_base"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                style="@style/normalTextStyle"
+                android:text="用户名" />
+
+            <com.riskmanagement.utils.ClearEditText
+                android:id="@+id/et_register_username"
+                style="@style/normalHintTextStyle"
+                android:hint="@string/username"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <View style="@style/normalLineStyle" />
+
+        <LinearLayout style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                style="@style/normalTextStyle"
+                android:text="手机号码" />
+
+            <com.riskmanagement.utils.ClearEditText
+                android:id="@+id/et_register_phone_num"
+                style="@style/normalHintTextStyle"
+                android:hint="@string/phonenumber"
+                android:inputType="phone"
+                android:maxLength="11" />
+        </LinearLayout>
+
+        <View style="@style/normalLineStyle" />
+
+        <LinearLayout style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                style="@style/normalTextStyle"
+                android:text="密码" />
+
+            <com.riskmanagement.utils.ClearEditText
+                android:id="@+id/et_register_password"
+                style="@style/normalHintTextStyle"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <View style="@style/normalLineStyle" />
+
+        <LinearLayout style="@style/normalLinearLayoutStyle">
+
+            <TextView
+                style="@style/normalTextStyle"
+                android:text="手机验证码" />
+
+            <com.riskmanagement.utils.ClearEditText
+                android:id="@+id/et_register_code"
+                style="@style/normalHintTextStyle"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:hint="@string/phonecode"
+                android:maxLines="1" />
+
+            <Button
+                android:id="@+id/btn_register_sendVerificationCode"
+                style="@style/normalCodeButtonStyle"
+                android:text="发送验证码" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_register_button"
+        style="@style/normalSubmitButtonStyle"
+        android:text="注册" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="1.手机号仅用于获取验证码，不会向第三方公开。"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_small_size" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.点击“注册”表示您已阅读并接受"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/text_small_size" />
+
+            <TextView
+                android:id="@+id/tv_register_protocol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《XX用户协议》"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/text_small_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

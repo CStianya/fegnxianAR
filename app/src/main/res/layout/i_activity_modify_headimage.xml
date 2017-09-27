@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/activity_base"/>
+
+    <ImageView
+        android:id="@+id/IV_headshow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+    
+    <Button
+        android:id="@+id/buttonLocal"
+        style="@style/normalSubmitButtonStyle"
+        android:text="上传头像" />
+    <Button
+        android:id="@+id/buttonCamera"
+        style="@style/normalSubmitButtonStyle"
+        android:text="拍照上传" />
+    <Button
+        android:id="@+id/buttonpost"
+        style="@style/normalSubmitButtonStyle"
+        android:text="确认上传" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/icon_build" />
+    </RelativeLayout>
+</LinearLayout>

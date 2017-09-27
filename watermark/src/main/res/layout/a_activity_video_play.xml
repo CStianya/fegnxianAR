@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.example.zhaoshuang.weixinrecordeddemo.MyVideoView
+        android:id="@+id/vv_play"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/bt_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/btn_encryption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加密"
+            android:textSize="14sp"/>
+        <!--<Button
+            android:id="@+id/btn_zip"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="压缩"
+            />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

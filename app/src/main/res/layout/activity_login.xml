@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/activity_base"/>
+    <LinearLayout
+        android:id="@+id/rl_login_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/background_white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/login_Linear"
+            style="@style/normalLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/Login_imag"
+                style="@style/normalImageViewStyle"
+                android:src="@mipmap/icon_login_username" />
+
+            <com.riskmanagement.utils.ClearEditText
+                android:id="@+id/login_username"
+                style="@style/normalHintTextStyle"
+                android:hint="@string/tel_number"
+                android:maxLength="10"
+                android:lines="1"
+                 />
+        </LinearLayout>
+
+        <View style="@style/normalLineStyle" />
+
+        <LinearLayout
+            android:id="@+id/login_Linear1"
+            style="@style/normalLinearLayoutStyle">
+
+            <ImageView
+                android:id="@+id/login_imag1"
+                style="@style/normalImageViewStyle"
+                android:src="@mipmap/icon_login_password" />
+
+            <com.riskmanagement.utils.ClearEditText
+                android:id="@+id/login_password"
+                style="@style/normalHintTextStyle"
+                android:hint="@string/login_password"
+                android:inputType="textPassword"
+                android:maxLength="15"
+                android:lines="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--登录按钮-->
+    <Button
+        android:id="@+id/i_login_bt"
+        style="@style/normalSubmitButtonStyle"
+        android:layout_below="@id/rl_login_edit"
+        android:text="登录" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/i_login_bt"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/i_register_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:text="立即注册"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/text_small_size" />
+
+
+        <TextView
+            android:id="@+id/i_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="忘记密码?"
+            android:textColor="@color/content_color"
+            android:textSize="@dimen/text_small_size" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="点击"
+        android:onClick="thisclick"
+        />
+</LinearLayout>

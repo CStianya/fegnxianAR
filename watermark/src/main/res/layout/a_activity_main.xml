@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.example.zhaoshuang.weixinrecordeddemo.FocusSurfaceView
+        android:id="@+id/sv_ffmpegaa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_showVideo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <com.example.zhaoshuang.weixinrecordeddemo.MyVideoView
+            android:id="@+id/vv_play"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+        <com.example.zhaoshuang.weixinrecordeddemo.WatermarkTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/watermark"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:layout_centerInParent="true"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="14sp"
+        android:textColor="#fff"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_above="@id/rl_bottom"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/video_delete"/>
+        <ImageView
+            android:id="@+id/iv_finish"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/video_finish"/>
+
+        <com.example.zhaoshuang.weixinrecordeddemo.RecordedButton
+            android:id="@+id/rb_start"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+       <!-- <Chronometer
+            android:id="@+id/chron_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentBottom="true"
+            />-->
+        <TextView
+            android:id="@+id/tv_time_minute"
+            android:text="00:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentBottom="true" />
+        <TextView
+            android:id="@+id/tv_time_secnd"
+            android:text="00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="4dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/tv_time_minute"/>
+
+        <TextView
+            android:id="@+id/tv_freeTime"
+            android:text="100MB"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:background="@mipmap/system"
+            android:id="@+id/iv_setting"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            />
+
+        <ImageView
+            android:id="@+id/iv_face"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@mipmap/change"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <include
+        android:id="@+id/mainHead"
+        layout="@layout/activity_base"/>
+    <ScrollView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/boder">
+        <EditText
+            android:id="@+id/et_arShow_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="AR内容"
+            android:background="@null"
+            />
+    </ScrollView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="AR风险学习完成?"/>
+    <Button
+        android:id="@+id/btn_ARShow_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="提交"/>
+</LinearLayout>

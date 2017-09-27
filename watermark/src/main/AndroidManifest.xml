@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.zhaoshuang.weixinrecordeddemo">
+
+    <application
+        android:name=".MyApplication"
+        android:theme="@style/AppTheme"
+        >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+
+            android:value="1592b6cf3e0f490bb62ab3e598fd3d9d" />
+            />
+        <service android:name="com.amap.api.location.APSService"></service>
+
+        <activity
+            android:name=".MActivity"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name=".EditVideoActivity"
+            android:windowSoftInputMode="adjustResize|adjustPan" />
+        <activity android:name=".VideoPlayActivity" />
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".StartActivity">
+        </activity>
+        <activity android:name=".http.UploadActivity"/>
+    </application>
+</manifest>

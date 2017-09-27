@@ -1,0 +1,76 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        config {
+            keyAlias 'key0'
+            keyPassword 'weilingtao'
+            storeFile file('E:/myKet.jks')
+            storePassword 'weilingtao'
+        }
+        config1 {
+            keyAlias 'ssh'
+            keyPassword '85151961'
+            storeFile file('E:/ssh.jks')
+            storePassword '85151961'
+        }
+    }
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+    defaultConfig {
+        applicationId "com.riskmanagement"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+        signingConfig signingConfigs.config1
+    }
+
+    packagingOptions{
+        exclude 'META-INF/rxjava.properties'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+repositories {
+    flatDir
+            {        dirs 'libs'    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+
+    compile(name:'demoaar', ext:'aar')
+
+    compile files('libs/BaiduLBS_Android.jar')
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.squareup.retrofit2:converter-scalars:2.2.0'
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.2.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0'
+    compile 'org.glassfish.main.javaee-api:javax.annotation:3.1.2.2'
+    compile 'org.projectlombok:lombok:1.16.16'
+
+    compile 'com.squareup.retrofit2:converter-protobuf:2.2.0'
+
+    //rxjava
+    compile "io.reactivex.rxjava2:rxjava:2.0.8"
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+
+}
+

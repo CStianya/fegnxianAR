@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="当前位置:"
+        android:layout_marginLeft="40dp"/>
+    <TextView
+        android:id="@+id/tv_reviewGps_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="福州市哈哈哈大学"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/btn_reviewGps_reLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="重新定位"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"/>
+</LinearLayout>
