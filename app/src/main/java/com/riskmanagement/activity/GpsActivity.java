@@ -99,7 +99,7 @@ public class GpsActivity extends BaseActivity {
         baiduMap=mapView.getMap();
         //开启定位图层
         baiduMap.setMyLocationEnabled(true);
-        locationClient = new LocationClient(getContext()); // 实例化LocationClient类
+        locationClient = new LocationClient(getApplicationContext()); // 实例化LocationClient类
         setLocationOption();   //设置定位参数
         locationClient.registerLocationListener(myListener); // 注册监听函数
         locationClient.start(); // 开始定位

@@ -80,7 +80,7 @@ public class GridAdapter extends BaseAdapter {
                     .load(Url)
                     .centerCrop()
                     .crossFade()
-                    .error(R.mipmap.ic_launcher)
+                    .error(R.mipmap.img)
                     .into(holder.imageView);
 
         return convertView;

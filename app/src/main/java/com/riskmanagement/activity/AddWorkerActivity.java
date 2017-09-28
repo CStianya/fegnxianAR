@@ -80,16 +80,18 @@ public class AddWorkerActivity extends BaseActivity implements AdapterView.OnIte
                     LinearLayout layout = (LinearLayout) lv_addworker.getChildAt(i);// 获得子item的layout
                     CheckBox checkBox = (CheckBox) layout.findViewById(R.id.cb_worker_selected);// 从layout中获得控件,根据其id
                     if(checkBox.isChecked()){
+                        boolean isExit = false;
                         for(int j = 0; j<mUserList.size();j++){
                             if(userList.get(i).getId().equals(mUserList.get(j).getId())){
+                                isExit = true;
                                 Toast.makeText(AddWorkerActivity.this,"已有该作业人员",Toast.LENGTH_SHORT).show();
                                 break;
                             }
-                            if(j == mUserList.size()-1){
-                                mUserList.add(userList.get(i));
-                            }
                         }
-
+                        if(!isExit || mUserList.size() == 0){
+                            Toast.makeText(AddWorkerActivity.this,"添加成功",Toast.LENGTH_SHORT).show();
+                            mUserList.add(userList.get(i));
+                        }
                     }
                 }
                 finish();

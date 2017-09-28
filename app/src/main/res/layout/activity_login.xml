@@ -95,10 +95,4 @@
             android:textColor="@color/content_color"
             android:textSize="@dimen/text_small_size" />
     </RelativeLayout>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="点击"
-        android:onClick="thisclick"
-        />
 </LinearLayout>

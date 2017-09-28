@@ -52,6 +52,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 import static android.content.Context.MODE_PRIVATE;
+import static com.baidu.mapapi.BMapManager.getContext;
 import static com.riskmanagement.MyApplication.MPcoordinates;
 import static com.riskmanagement.MyApplication.mLocation;
 
@@ -167,7 +168,9 @@ public class GPSFragment extends Fragment implements View.OnClickListener{
     }
 
     private void initView(View view) {
+        nearList = new ArrayList<PoiInfo>();
         mapView=(MapView)view.findViewById(R.id.mv_map);
+        lv_gps_near=(ListView)view.findViewById(R.id.lv_gps_near);
         tv_gps_all=(TextView)view.findViewById(R.id.tv_gps_all);
         tv_gps_area=(TextView)view.findViewById(R.id.tv_gps_area);
         tv_gps_business=(TextView)view.findViewById(R.id.tv_gps_business);
@@ -176,12 +179,15 @@ public class GPSFragment extends Fragment implements View.OnClickListener{
         tv_gps_area.setOnClickListener(onClickListener);
         tv_gps_business.setOnClickListener(onClickListener);
         tv_gps_officeBuilding.setOnClickListener(onClickListener);
-        lv_gps_near=(ListView)view.findViewById(R.id.lv_gps_near);
 //        iv_gps_search=(ImageView)view.findViewById(R.id.iv_gps_search);
         tv_gps_location=(TextView)view.findViewById(R.id.tv_gps_location);
         baiduMap=mapView.getMap();
-        nearList = new ArrayList<PoiInfo>();
-
+        //开启定位图层
+        baiduMap.setMyLocationEnabled(true);
+        locationClient = new LocationClient(getActivity().getApplicationContext()); // 实例化LocationClient类
+        setLocationOption();   //设置定位参数
+        locationClient.registerLocationListener(myListener); // 注册监听函数
+        locationClient.start(); // 开始定位
     }
 
 

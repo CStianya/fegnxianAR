@@ -20,7 +20,7 @@ public class MainActivity extends FragmentActivity {
     private String[] tabTags={"projectList","myAccount"};
     private Class[] tabFragments={ProjectListFragment.class,MyAccountFragment.class};
     private String[] tabTitles={"项目列表","我的"};
-    private int[] tabIcons={R.mipmap.ic_launcher,R.mipmap.ic_launcher};
+    private int[] tabIcons={R.mipmap.img,R.mipmap.img};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

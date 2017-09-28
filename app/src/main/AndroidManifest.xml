@@ -85,11 +85,13 @@
         <activity android:name=".activity.ModifySexActivity"/>
         <activity android:name=".activity.SuggestionActivity"/>
         <activity android:name=".activity.PersonalDataActivity"/>
-        <activity android:name="com.riskmanagement.MVP.view.activity.MVP_MainActivity"/>
-        <activity android:name="com.riskmanagement.MVP.view.activity.MVP_PersonalDataActivity"/>
-        <activity android:name="com.riskmanagement.MVP.view.activity.MVP_ModifyNicknameActivity"/>
-        <activity android:name="com.riskmanagement.MVP.view.activity.MVP_ModifySexActivity"/>
-        <activity android:name="com.riskmanagement.MVP.view.activity.MVP_ModifyHeadImageActivity"/>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+
     </application>
 
 </manifest>
