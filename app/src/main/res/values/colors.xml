@@ -16,4 +16,6 @@
     <color name="darker_gray">#ddd</color>
     <color name="background_color">#eeeeee</color>
     <color name="text_gray">#666666</color>
+
+    <color name="colorHint">#999999</color>
 </resources>

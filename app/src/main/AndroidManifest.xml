@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.riskmanagement">
+
+    <!-- 存储 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <!-- SDK2.1新增获取用户位置信息 -->
     <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
     <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"></uses-permission>
@@ -85,12 +89,16 @@
         <activity android:name=".activity.ModifySexActivity"/>
         <activity android:name=".activity.SuggestionActivity"/>
         <activity android:name=".activity.PersonalDataActivity"/>
+        <activity android:name=".activity.Form1Activity"/>
+        <activity android:name=".activity.Form2Activity"/>
 
         <service
             android:name="com.baidu.location.f"
             android:enabled="true"
             android:process=":remote" >
         </service>
+
+        <service android:name="com.amap.api.location.APSService"/>
 
     </application>
 

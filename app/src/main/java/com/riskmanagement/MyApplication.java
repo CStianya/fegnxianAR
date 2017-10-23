@@ -50,7 +50,7 @@ public class MyApplication extends Application {
         VCamera.setDebugMode(true);
 
         // 初始化拍摄SDK，必须
-        // VCamera.initialize(this);
+        //VCamera.initialize(this);
     }
 
 }

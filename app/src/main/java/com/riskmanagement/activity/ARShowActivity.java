@@ -48,20 +48,9 @@ public class ARShowActivity extends BaseActivity {
         btn_ARShow_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openApp();
-                //submit();
+                submit();
             }
         });
-    }
-
-    // 打开另外一个APP
-    private void openApp() {
-        Intent intent = getPackageManager().getLaunchIntentForPackage("com.unity");
-        if (intent != null) {
-            startActivity(intent);
-        } else {
-            Toast.makeText(getApplicationContext(), "对不起，你尚未安装该应用！", Toast.LENGTH_LONG).show();
-        }
     }
 
     private void submit(){

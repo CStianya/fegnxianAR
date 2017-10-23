@@ -5,10 +5,12 @@
     <include
         android:id="@+id/mainHead"
         layout="@layout/activity_base"/>
+
     <EditText
         android:id="@+id/et_suggestion_content"
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="200dp"/>
+
     <Button
         android:id="@+id/btn_suggestion_submit"
         android:layout_width="80dp"
