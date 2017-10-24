@@ -9,4 +9,11 @@
     <string name="tel_number">请输入您的昵称</string>
     <string name="login_password">密码</string>string>
     <string name="immediately_login">立即登录</string>
+
+    <string-array name="clarification_lever">
+        <item>公司级</item>
+        <item>项目部级</item>
+        <item>施工队级</item>
+    </string-array>
+
 </resources>

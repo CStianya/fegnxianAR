@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.zhaoshuang.weixinrecordeddemo.SMainActivity;
 import com.riskmanagement.R;
 
 /**
@@ -29,7 +30,7 @@ public class Form2Activity extends BaseActivity {
         btn_ARShow_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Form2Activity.this, ARShowActivity.class));
+                startActivity(new Intent(Form2Activity.this, SMainActivity.class));
                 finish();
             }
         });

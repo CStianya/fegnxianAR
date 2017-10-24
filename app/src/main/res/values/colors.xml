@@ -12,6 +12,7 @@
     <color name="blue">#2db3e9</color>
     <color name="content_color">#999999</color>
     <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
     <color name="ilou_text_color">#666666</color>
     <color name="darker_gray">#ddd</color>
     <color name="background_color">#eeeeee</color>

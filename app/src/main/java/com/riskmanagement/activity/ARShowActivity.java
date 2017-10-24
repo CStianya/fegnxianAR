@@ -90,7 +90,7 @@ public class ARShowActivity extends BaseActivity {
             switch (msg.what){
                 case 10:
                     Toast.makeText(ARShowActivity.this,"提交成功",Toast.LENGTH_LONG).show();
-                    Intent intent = new Intent(ARShowActivity.this, SMainActivity.class);
+                    Intent intent = new Intent(ARShowActivity.this, Form1Activity.class);
                     startActivity(intent);
                     finish();
                     break;

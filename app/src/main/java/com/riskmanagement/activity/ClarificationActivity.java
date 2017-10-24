@@ -39,7 +39,7 @@ public class ClarificationActivity extends BaseActivity {
         btn_form_next.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(ClarificationActivity.this, Form1Activity.class));
+                startActivity(new Intent(ClarificationActivity.this, ARShowActivity.class));
                 finish();
             }
         });
