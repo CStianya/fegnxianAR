@@ -14,6 +14,12 @@ android {
             storeFile file('E:/ssh.jks')
             storePassword '85151961'
         }
+        config2 {
+            keyAlias 'key0'
+            keyPassword '675121663'
+            storeFile file('F:/交接/key/fx.jks')
+            storePassword '675121663'
+        }
     }
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
